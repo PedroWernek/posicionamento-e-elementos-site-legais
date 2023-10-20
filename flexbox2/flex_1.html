@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Basic</title>
+  <style>
+
+    html, body {
+      height: 90%;
+    }
+
+    .conteiner {
+		  border: 1px solid black;
+      background-color: yellow;
+      background-image: url("../img/f638x638-112017_170184_5050.webp");
+      background-size: 1130px 500px;
+      margin: 50px;
+      height: 100%;
+
+      display: flex;
+      flex-direction:row; 
+      justify-content:space-between;
+      align-items:center;
+    }
+      /*justify-content: center ;
+      align-items: flex-end;  
+      flex-direction: row; */
+
+    .item {
+      flex-direction: 1;
+      align-items: center;
+    }
+    .conteiner > div {
+      font-family: "Roboto";
+      border: 2px solid #194d6b;
+      background-color: #4b98f1;
+      border-radius: 5px;
+      /* align-self: stretch;  */
+      padding: 10px;
+      width: 150px;
+      /* ajusta proporcional no box */
+      /* flex: 1;  */
+    }
+
+    .um{
+      flex: 1;
+      align-self: flex-end;
+      /*animation: Music 1000ms infinite;*/
+    }
+    .dois{
+      flex: 2;
+      align-self: flex-end;
+      /*animation: Music 800ms infinite;
+    }
+    @keyframes Music{
+      to{
+        height: 90%;
+      }
+      50%{
+        height: 10%;
+      }
+     from{
+        height: 90%;
+      }
+    }
+    */
+    .tres{
+      flex: 1;
+      align-self:flex-end;
+      /*animation: Music 700ms infinite;*/
+    }
+  </style>
+</head>
+<body>
+  <div class="conteiner">
+    <div class="item um">Um</div>
+    <div class="item dois">dois</div>
+    <div class="item tres">Três
+        <br>possui
+        <br>um
+        <br>texto
+        <br>extra
+    </div>
+  </div>
+</body>
+</html>
